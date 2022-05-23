@@ -9,6 +9,13 @@ int main()
     cin >> dijit;
 
     (dijit <= 21) ? cout << 21 - dijit : cout << (dijit - 21) * 2;
+
+    int arr[3][3] = { 0 };
+    int* pArr;
+    pArr = &arr[0][0];
+    arr[1][1] = 12; // Просто для проверки
+    pArr += 4;
+    cout << endl <<*pArr;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
