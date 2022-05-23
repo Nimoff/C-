@@ -3,6 +3,12 @@
 
 #include <iostream>
 using namespace std;
+
+extern int const a;
+extern int const b;
+extern int const c;
+extern int const d;
+
 int main()
 {
     int dijit;
@@ -15,7 +21,10 @@ int main()
     pArr = &arr[0][0];
     arr[1][1] = 12; // Просто для проверки
     pArr += 4;
-    cout << endl <<*pArr;
+    cout << endl << *pArr << endl;
+
+    float amount =  a * (b + (static_cast <float> (c) / d));
+    cout << amount;
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
