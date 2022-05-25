@@ -12,10 +12,17 @@ int main(){
 	(a + b < 21 and a + b > 9) ? cout << "true" : cout << "false";
 	*/
 
+	// Задание 2
 	int const a = 9, b = 1;
 
-	if ((a == 10 || b == 10) || a + b == 10) cout << "true";
+	if ((a == 10 || b == 10) || a + b == 10) cout << "true" << endl;
 	else cout << "false";
+
+	// Задание 3
+	cout << "Your numbers: ";
+	for (size_t i = 1; i < 50; i += 2) {
+		cout << i << ' ';
+	}
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
