@@ -4,12 +4,18 @@
 #include <iostream>
 
 using namespace std;
-int main()
-{
+int main(){
+	/* Задание 1
 	int a, b;
 	cin >> a >> b;
 
-	(a + b < 21 and a + b > 9) ? cout <<  "true" : cout << "false";
+	(a + b < 21 and a + b > 9) ? cout << "true" : cout << "false";
+	*/
+
+	int const a = 9, b = 1;
+
+	if ((a == 10 || b == 10) || a + b == 10) cout << "true";
+	else cout << "false";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
