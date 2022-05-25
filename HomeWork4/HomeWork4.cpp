@@ -23,6 +23,17 @@ int main(){
 	for (size_t i = 1; i < 50; i += 2) {
 		cout << i << ' ';
 	}
+
+	//Задание 4
+	cout << endl;
+	int count = 0;
+	int digit;
+	cin >> digit;
+
+	for (size_t i = 2; i < digit; i++) {
+		(digit % i == 0) ? count += 1 : count += 0;
+	}
+	(count > 0) ? cout << "Composite number" : cout << "Simple number";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
