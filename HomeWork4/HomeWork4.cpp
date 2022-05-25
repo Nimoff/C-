@@ -24,7 +24,7 @@ int main(){
 		cout << i << ' ';
 	}
 
-	//Задание 4
+	/*Задание 4
 	cout << endl;
 	int count = 0;
 	int digit;
@@ -34,6 +34,15 @@ int main(){
 		(digit % i == 0) ? count += 1 : count += 0;
 	}
 	(count > 0) ? cout << "Composite number" : cout << "Simple number";
+	*/
+
+	//Задание 5
+	cout << endl;
+	short year;
+	cin >> year;
+
+	if ((year % 4 == 0 and year % 100 != 0) or year % 400 == 0) cout << "Leap year";
+	else cout << "Not leap year";
 }
 
 // Запуск программы: CTRL+F5 или меню "Отладка" > "Запуск без отладки"
