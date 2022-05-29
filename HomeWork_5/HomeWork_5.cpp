@@ -24,6 +24,17 @@ void arr2(int ptr[], size_t size)
     }
 }
 
+//Задание 3
+void arr3(int* ptr, size_t size = 8)
+{
+    size_t count = 1;
+    for(size_t i = 0; i < size; i++)
+    {
+        ptr[i] = count;
+        count += 3;
+    }
+}
+
 int main()
 {
     const int s = 5;
@@ -33,5 +44,12 @@ int main()
     const int s2 = 10;
     int a2[s2] = {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
     arr2(a2, 10);
+
+    cout << endl;
+    int a3[8] = { 0 };
+    arr3(a3);
+    for (int i : a3) {
+        cout << i << ' ';
+    }
 }
 
