@@ -35,6 +35,34 @@ void arr3(int* ptr, size_t size = 8)
     }
 }
 
+// Задание 4
+void arr4(int* ptr,size_t len, int n)
+{
+    int myarr[] = { 0 };
+    for (size_t i = 0; i < len; i++)
+    {
+        myarr[i] = ptr[i];
+    }
+
+    if (n < 0) {
+        n = len - abs(n);
+    }
+
+
+    int count = 0;
+    for (size_t i = n; i < len; i++)
+    {
+        ptr[count] = myarr[i];
+        count++;
+    }
+
+    for (size_t i = 0; i < n; i++)
+    {
+        ptr[count] = myarr[i];
+        count++;
+    }
+}
+
 int main()
 {
     const int s = 5;
@@ -49,6 +77,13 @@ int main()
     int a3[8] = { 0 };
     arr3(a3);
     for (int i : a3) {
+        cout << i << ' ';
+    }
+
+    cout << endl;
+    int a4[4] = { 5, 2, 3, 4 };
+    arr4(a4, 4, 3);
+    for (size_t i : a4) {
         cout << i << ' ';
     }
 }
