@@ -63,6 +63,21 @@ void arr4(int* ptr,size_t len, int n)
     }
 }
 
+//Задание 5
+bool arr5(int* prt, size_t n)
+{
+    int count = 0;
+    for (size_t i = 0; i < n; i++) {
+        count += prt[i];
+        int count2 = 0;
+        for (size_t j = i + 1; j < n; j++) {
+            count2 += prt[j];
+        }
+        if (count == count2) return true;
+    }
+    return false;
+}
+
 int main()
 {
     const int s = 5;
@@ -86,5 +101,9 @@ int main()
     for (size_t i : a4) {
         cout << i << ' ';
     }
+
+    cout << endl;
+    int a5[5] = { 1, 1, 1, 2, 1 };
+    (arr5(a5, 5)) ? cout << "True" : cout << "False";
 }
 
